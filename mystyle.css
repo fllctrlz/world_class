@@ -19,6 +19,11 @@ img.small_img_vertical {
 	height:280px;
 }
 
+img.portrait {
+	width:57px;
+	height:85px;
+}
+
 td.tick-border {
 	border: 1px solid black; 
 }
