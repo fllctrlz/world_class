@@ -93,12 +93,29 @@
 	<img class="small_img" src="images/robot/p04.jpg"></img>
 	<img class="small_img" src="images/robot/p02.jpg"></img>
 	<br>
-		<h3> TODO - Examples of tests experiments used </h3>
-	<img class="small_img" src="images/robot/p01.jpg"></img>
-	
-	<img class="small_img" src="images/robot/p03.jpg"></img>
-	
-
+		<h2>Examples of tests experiments used </h2>
+	<h4>Finding the right Light Sensors</h4>	
+	<p>When first designing our robot we wanted to make sure that all the light sensors were the same.
+	What we mean by that is the light sensors all have a small difference in reading because of manufacturing variabiltys. 
+	If you were to put two light sensors on the same line then they would get a small difference in reading. To make sure that 
+	all our light sensors had about the same reading we comletley shielded  ten light sensors to eliminate the variable of ambient light\
+	the took not of what the reading 
+	was for each of the light sensors on black , white, and green. We then found the four light sensors which have the
+	closest reading to eachother and used those four light sensors on the robot.
+	</p>
+	<!--<img class="small_img" src="images/robot/p01.jpg"></img>
+	<img class="small_img" src="images/robot/p03.jpg"></img>-->
+	<p>Pics of Light Sensor Tests</p>
+	<br>
+	<h4>Making sure the Robot goes straight</h4>
+	<p>The move blocks that come with the EV3 software (Move Tank and Move Steering) are very unreliable. 
+	Although they do come with a built in error correction program they still cannot move staright. In order to test that 
+	we set a designated starting spot for the robot and then we woudl run it for a certain distance until it hit the wall on 
+	the other side of teh table. We ran the robot tens of times and found that each time it would end up in a differemt spot on the other
+	side of the table. Each time it would be atleast one inch away from the previous run. Then, we made our own error corrected 
+	move block (which you can read about in the programming section of the website). We conducted the exact same experiment
+	using our new block and found that there was much less error and it would consistantly end up in the same spot.
+	</p>
 	<br>
 	<h2>Robot and General Strategy</h2>
 	<p>
