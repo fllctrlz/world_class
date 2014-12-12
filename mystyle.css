@@ -10,6 +10,16 @@ img.small_img {
 	height:210px;
 }
 
+img.big_img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:560px;
+	height:420px;
+}
+
+
 img.small_img_vertical {
 	margin-top: 5px;
 	margin-bottom: 5px;
