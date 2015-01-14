@@ -69,7 +69,7 @@
 	<br>
 		<ul>
 			<li>We use math blocks, variables, logic,
-			compares, loops switches, and MyBlocks with
+			compare blocks, loops, switches, and MyBlocks with
 			data hubs (so we could reuse code but change 
 			parameters)</li>
 			
@@ -77,20 +77,20 @@
 			which allows us to quickly and efficiently 
 			choose missions (or even re-run missions 
 			quickly) during matches. Audible sounds 
-			and meaningful NXT screen messages allow 
+			and meaningful EV3 screen messages allow 
 			the user to select programs with ease</li>
 			
 			<li>By using gear lash removal before each 
 			movement, the ramp up feature when starting
 			from stationary position, and our own 
-			error-corrected move block, we are able
-			to achieve more consistent and repeatable
+			error-corrected move block, Proportional Integral Derivative
+			line following we are able to achieve more consistent and repeatable
 			robot movement</li>
 			
 			<li>We regularly use subroutines (i.e. MyBlock
 			s) to reuse code whenever possible and to keep
 			our program sizes manageable. See diagram of our 
-			NXT-G programming hierarchy:</li>
+			programming hierarchy:</li>
 				
 				<img class="xl_img" src="images/robot/hierachy.png"></img>
 			
@@ -100,7 +100,7 @@
 			
 			<li>We make frequent use of our square up 
 			subroutine which allows the robot to position 
-			itself perpendicularly to any black line (from
+			itself perpendicularly to any black or green line (from
 			virtually any angle of attack)</li>
 			
 			<li>Our MyBlocks and variables are given 
@@ -109,7 +109,7 @@
 			are doing</li>
 			
 			<li>Within all of our major movement
-			MyBlocks (such as error correction and PID),
+			MyBlocks (such as error corrected move block and PID line following block),
 			we have a MyBlock inside that is constantly 
 			checking if a certain exit condition is met.
 			When that exit condition is met, the program
@@ -117,7 +117,7 @@
 			the robot when light sensor 4 sees a black
 			line.</li>
 			
-			<li>Our “Check-Abort” MyBlock constantly checks 
+			<li>Our "Check-Abort" MyBlock constantly checks 
 			whether the EV3 up arrow button is pressed.   
 			We can interrupt our missions at any time and
 			still stay within the overall selection program 
@@ -146,15 +146,15 @@
 		
 		<br>
 		
-		<h3>Scalelight</h3>
+		<h3>ScaleLight</h3>
 		 
-		 <p>This scale light my-block allow us to read the
+		 <p>This scale light MyBlock allow us to read the
 		 raw values that a selected light sensor currently
 		 sees and either output that directly or use a
 		 formula to convert it to a reading in a range from
-		 0 being white to 1000 being black (based on our
-		 values for white and black collected in calibration)
-		 and then output it.
+		0 being white to 1000 being black (based on our
+		values for white and black collected in calibration)
+		and then output it.
 		The equation we created to scale our light readings uses 
 		variables for the minimum and maximum raw light readings 
 		read in calibration. Inputting the minimum raw light 
@@ -165,14 +165,14 @@
 		to some point in the range and output a usable calibrated
 		value with 0 being white and 1000 being black.</p>
 		
-		<p>Current calibrated light reading = 1000*
+		<p>Returned light reading by the block = 1000*
 		(current raw light value – min) / (max – min)</p>
 		
 		<img class="xl_img" src="images/robot/scalelight.jpg"></img>
 		
-		<h3>PID</h3>
+		<h3>Proportional Inte Derivative Line Following</h3>
 		
-		<p>Our Proportional Integral Derivative line following
+		<p>Our Proportional Integral Derivative Line Following
 		program is a smoother way to line follow that adjusts
 		the motor powers of motors B and C proportionally to 
 		the distance from the edge of the line, which would
@@ -206,12 +206,12 @@
 		
 		<img class="xl_img" src="images/robot/main.jpg"></img>
 		
-		<h3>Error Correction</h3>
+		<h3>Error Corrected Move Block</h3>
 		
 		<p>For straighter and more accurate movement because
 		the move block in the EV-3 program is unreliable. 
 		Our program continuously measures the distances 
-		travelled by each motor and constantly adjusts each’s
+		travelled by each motor and constantly adjusts its 
 		speed to maintain the predetermined ratio of the 
 		distance travelled by motors B and C. Also allows
 		for accurate arc turns.</p>
@@ -220,7 +220,7 @@
 		
 		<h3>Check Abort</h3>
 		
-		<p>We have created a my-block subroutine called 
+		<p>We have created a MyBlock subroutine called 
 		Check-Abort that constantly checks whether the up
 		arrow button is pressed. If so, it exits the loop
 		in the MyBlock it is in. Our programs are made almost
