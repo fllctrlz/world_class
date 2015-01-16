@@ -28,6 +28,14 @@ img.xl_img {
 	height:600px;
 }
 
+img.ctv {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:420px;
+	height:315px;
+}
 
 
 img.small_img_vertical {
