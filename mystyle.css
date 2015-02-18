@@ -47,6 +47,15 @@ img.small_img_vertical {
 	height:280px;
 }
 
+img.extra_wide {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:991px;
+	height:297px;
+}
+
 img.portrait {
 	width:57px;
 	height:85px;
