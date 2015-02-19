@@ -92,12 +92,13 @@
 			s) to reuse code whenever possible and to keep
 			our program sizes manageable. See diagram of our 
 			programming hierarchy:</li>
-				
+			<br>	
 				<img class="xl_img" src="images/robot/hierachy.png"></img>
-			
+			<br>
+			<br>
 			<li>We annotate our work to help us
 			debug programs and to better understand
-			each programming block's purpose<li>
+			each programming block's purpose</li>
 			
 			<li>We make frequent use of our square up 
 			subroutine which allows the robot to position 
@@ -168,10 +169,11 @@
 		
 		<p>Returned light reading by the block = 1000*
 		(current raw light value – min) / (max – min)</p>
-		
+		<br>
 		<img class="xl_img" src="images/robot/scalelight.jpg"></img>
-		
-		<h3>Proportional Inte Derivative Line Following</h3>
+		<br>
+		<br>
+		<h3>Proportional Integral Derivative Line Following</h3>
 		
 		<p>Our Proportional Integral Derivative Line Following
 		program is a smoother way to line follow that adjusts
@@ -185,10 +187,11 @@
 		scaled to an appropriate value for use in motor powers
 		based on three user-inputted values in variables in
 		InitMain, Kp, Ki, and Kd.</p>
-		
+		<br>
 		<img class="xl_img" src="images/robot/pid.jpg"></img>
-		
-		<h3>Main</h3>
+		<br>
+		<br>
+		<h3>Main Selection Program</h3>
 
 		<p>This selection program allows us to quickly and 
 		efficiently change from one of our program/missions 
@@ -204,11 +207,12 @@
 		forwards through our list of missions, the program 
 		accommodates for that by allowing you to navigate 
 		with the left and rights arrow buttons.</p>
-		
+		<br>
 		<img class="xl_img" src="images/robot/main.jpg"></img>
-		
+		<br>
+		<br>
 		<h3>Error Corrected Move Block</h3>
-		
+		<br>
 		<p>For straighter and more accurate movement because
 		the move block in the EV-3 program is unreliable. 
 		Our program continuously measures the distances 
@@ -218,9 +222,9 @@
 		for accurate arc turns.</p>
 		
 		<img class="xl_img" src="images/robot/zmove.jpg"></img>
-		
+		<br>
 		<h3>Check Abort</h3>
-		
+		<br>
 		<p>We have created a MyBlock subroutine called 
 		Check-Abort that constantly checks whether the up
 		arrow button is pressed. If so, it exits the loop
@@ -232,9 +236,9 @@
 		stay within the overall selection program and to 
 		time, rather than fiddle with the buttons to select
 		the next mission.</p>
-		
+		<br>
 		<img class="xl_img" src="images/robot/checkabort.jpg"></img>
-		
+		<br>
     </div>
 	<script src="jquery/jquery-1.11.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
