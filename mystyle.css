@@ -56,6 +56,15 @@ img.extra_wide {
 	height:297px;
 }
 
+img.ultra_wide {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:1010px;
+	height:189px;
+}
+
 img.portrait {
 	width:57px;
 	height:85px;
