@@ -180,7 +180,7 @@
 		
 		<p>Our Proportional Integral Derivative Line Following
 		program is a smoother way to line follow that adjusts
-		the motor powers of motors B and C proportionally to 
+		the power levels of motors B and C proportionally to 
 		the distance from the edge of the line, which would
 		have a light value of 500. It takes into account the 
 		error (the difference between the optimal and current
@@ -197,32 +197,31 @@
 		<h3>Main Selection Program</h3>
 
 		<p>This selection program allows us to quickly and 
-		efficiently change from one of our program/missions 
-		to another during the two and a half minute match. 
-		In fact, our selection program is a program that
-		contains my-blocks that each holds one of our missions
-		. The user of the robot simply starts the selection 
+		efficiently switch programs/missions 
+		during the two-and-a half minute match. 
+		Our selection program contains My-Blocks, each conatins one of our missions.
+		The user of the robot simply starts the selection 
 		program and clicks the center button to start the first
 		mission. Then, when the mission finishes, the robot 
-		automatically chooses the next mission and waits for
-		you to just click the center button again, without
-		any hassle. In case you do need to go backwards or 
-		forwards through our list of missions, the program 
-		accommodates for that by allowing you to navigate 
-		with the left and rights arrow buttons.</p>
+		automatically advances to the next mission and waits for
+		the user to click the center button to run the apporopriate mission.
+		In case one needs to go backwards or 
+		forwards through the list of missions, the program 
+		accommodates that by allowing the user to navigate 
+		with the left and right arrow buttons.</p>
 		<br>
 		<img class="xl_img" src="images/robot/main.jpg"></img>
 		<br>
 		<br>
-		<h3>Error Corrected Move Block</h3>
+		<h3>Error-Corrected Move Block</h3>
 		<br>
-		<p>For straighter and more accurate movement because
-		the move block in the EV-3 program is unreliable. 
-		Our program continuously measures the distances 
-		travelled by each motor and constantly adjusts its 
-		speed to maintain the predetermined ratio of the 
-		distance travelled by motors B and C. Also allows
-		for accurate arc turns.</p>
+		<p>For straighter and more accurate movements, 
+		our program continuously measures the distances 
+		travelled by each drive motor and constantly adjusts their 
+		speeds to maintain the predetermined ratio of the 
+		distance travelled by motors B and C. This My-Block also alows for
+		more accurate robot arc turns.
+		</p>
 		
 		<img class="xl_img" src="images/robot/zmove.jpg"></img>
 		<br>
@@ -230,14 +229,13 @@
 		<br>
 		<p>We have created a MyBlock subroutine called 
 		Check-Abort that constantly checks whether the up
-		arrow button is pressed. If so, it exits the loop
-		in the MyBlock it is in. Our programs are made almost
-		exclusively out of MyBlocks, including error 
-		correction, wait blocks, pivot-turns, PID, etc.
+		arrow button is pressed. If so, Check-Abort exits the loop
+		in the MyBlock it is contained in. Our programs are made almost
+		exclusively out of MyBlocks, including error-correction, wait blocks, pivot-turns, PID, etc.
 		Therefore, in the rare circumstance that we must
-		stop our robot, we can do it at any time and still
-		stay within the overall selection program and to 
-		time, rather than fiddle with the buttons to select
+		stop our robot, we can do so at any time and still
+		stay within our overall selection program,
+		rather than fiddle with the EV3 buttons to in selecting
 		the next mission.</p>
 		<br>
 		<img class="xl_img" src="images/robot/checkabort.jpg"></img>
