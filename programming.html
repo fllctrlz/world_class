@@ -67,13 +67,13 @@
     <!-- end of menu -->
     
     <div class="container">
-    <h1>General Strategy</h1>
+    <h1>General Programming Strategy</h1>
 	<br>
 		<ul>
 			<li>We use math blocks, variables, logic,
 			compare blocks, loops, switches, and MyBlocks with
-			data hubs (so we could reuse code but change 
-			parameters)</li>
+			data hubs (so we can reuse code and change 
+			parameters as required)</li>
 			
 			<li>We have created a selection program
 			which allows us to quickly and efficiently 
@@ -84,15 +84,16 @@
 			
 			<li>By using gear lash removal before each 
 			movement, the ramp up feature when starting
-			from stationary position, and our own 
-			error-corrected move block, Proportional Integral Derivative
+			from stationary position, our own 
+			error-corrected move block, and Proportional Integral Derivative
 			line following we are able to achieve more consistent and repeatable
 			robot movement</li>
 			
-			<li>We regularly use subroutines (i.e. MyBlock
-			s) to reuse code whenever possible and to keep
+			<li>We regularly use subroutines (i.e. MyBlocks)
+			to reuse code whenever possible and to keep
 			our program sizes manageable. See diagram of our 
-			programming hierarchy:</li>
+			programming hierarchy which illustrates th eextent to which 
+			we re-use proggrmaing code to be as efficient as possible:</li>
 			<br>	
 				<img class="xl_img" src="images/robot/hierachy.png"></img>
 			<br>
@@ -112,17 +113,18 @@
 			are doing</li>
 			
 			<li>Within all of our major movement
-			MyBlocks (such as error corrected move block and PID line following block),
+			MyBlocks (such as error-corrected move block and PID line following block),
 			we have a MyBlock inside that is constantly 
 			checking if a certain exit condition is met.
 			When that exit condition is met, the program
-			immediately exits that loop. For example, stop
+			immediately exits that loop causing the robot to 
+			advance to the next robot maneuver. For example, stop
 			the robot when light sensor 4 sees a black
 			line.</li>
 			
 			<li>Our "Check-Abort" MyBlock constantly checks 
 			whether the EV3 up arrow button is pressed.   
-			We can interrupt our missions at any time and
+			The robot operator can interrupt missions at any time and
 			still stay within the overall selection program 
 			to avoid the need to exit the program and find 
 			the next program or mission.</li>
@@ -151,22 +153,22 @@
 		
 		<h3>ScaleLight</h3>
 		 
-		 <p>This scale light MyBlock allow us to read the
+		 <p>This ScaleLight MyBlock allows us to read the
 		 raw values that a selected light sensor currently
-		 sees and either output that directly or use a
-		 formula to convert it to a reading in a range from
+		 sees and either output them directly or use a
+		 formula to convert them to a reading in a range from
 		0 being white to 1000 being black (based on our
 		values for white and black collected in calibration)
-		and then output it.
+		and then output them.
 		The equation we created to scale our light readings uses 
 		variables for the minimum and maximum raw light readings 
 		read in calibration. Inputting the minimum raw light 
 		reading (white) outputs a value of 0, and the maximum raw
 		light reading (black) outputs a value of 1000. With 
-		these two pairs of coordinates, we found a linear function;
-		when you input the current raw light value it will scale it
+		these two pairs of coordinates, we identified a linear function.
+		When you input the current raw light value the linear function will scale it
 		to some point in the range and output a usable calibrated
-		value with 0 being white and 1000 being black.</p>
+		value form 0 to 1000.</p>
 		
 		<p>Returned light reading by the block = 1000*
 		(current raw light value – min) / (max – min)</p>
