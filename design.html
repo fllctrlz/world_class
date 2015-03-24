@@ -71,7 +71,10 @@
 	<p>When designing our base robot, we establish criteria at the outset, such as desired footprint, height, balance, drivetrain, 
 	sensors to be used, user interface, etc. to arrive at a working prototype. We also strive to design and build a base robot which
 	is robust and which features a frame around the chassis to provide structural rigidity as well as means to square up against walls 
-	and mission models. After creating a working prototype, we design attachments keeping in mind that these attachments need to be 
+	and mission models. Before creating a prototype base robot we prepare some high level rudimentry drawings on a flip chart 
+	which we use to stimulate discussion amongst team members. Once the team sttles on a high level base robot design we use LDD 
+	or ML CAD to create a 3D-Drawing of the prototype. Doing so allows us to be as officiat as possible wiht regard to type and quantity 
+	of pieces used. Based on the final drawing, we construct our prototype base robot using LEGO pieces/elements. After creating a working prototype, we design attachments keeping in mind that these attachments need to be 
 	easy to install and remove, robust, and both passive and multipurpose whenever possible. From testing the prototype base robot and
 	the attachments, we make revisions to our work in order to combine and speed up missions and increase repeatability to achieve
 	maximum efficiency. By the end of the season, our attachments will often be in their fifth or sixth iteration.</p>
@@ -80,26 +83,27 @@
 	<img class="small_img" src="images/robot/p02.jpg"></img>
 	<br>
 	<br>
-		<h2>Examples of Tests Experiments Used </h2>
+		<h2>Examples Robotic Testing Conducted </h2>
 	<br>
-	<h4>Finding the Right Light Sensors</h4>	
-	<p>When first designing our robot we wanted to make sure that all the light sensors were the same. 
-	The light sensors all have a small difference in reading because of variation in manufacturing. 
-	If you were to put two light sensors on the same black line then there would be a variation in the reading. To make sure that 
+	<h4>Finding the optimal set of Light Sensors for our Robot</h4>	
+	<p>When first designing our robot we wanted to make sure that all the light sensors behaved similarly. 
+	The light sensors each return a small differences in readings because of variations in manufacturing. 
+	For example, if you were to place two different light sensors on the same black line, each would return different values for light intensity.
+	Somtimes the difference may be significant. To make sure that 
 	all our light sensors had about the same reading we completely shielded ten light sensors to eliminate the 
-	variable of ambient light and recorded reading
+	variable of ambient light and recorded the reading
 	for each of the light sensors on black, white, and green. We then found the four light sensors which have the
 	closest reading to each other and used those four light sensors on the robot.
 	</p>
 	<br>
-	<h4>Making Sure the Robot Drives Straight</h4>
-	<p>The Move blocks that come with the EV3 software (Move Tank and Move Steering) are very unreliable. 
-	Although they do come with a built in PID feature, they still cannot move the robot in a straight line. In order to test that 
-	we set a designated starting spot for the robot and then we ran it for a certain distance until it hit the wall on 
-	the other side of the table. We ran the robot dozens of times and found that each time it would end up in a different spot on the other
-	side of the table. Each time it would be up to one inch away from the previous run. Then, we made our own error-corrected 
-	move block (which you can read about in the programming section of the website). We conducted the exact same experiment
-	using our new block and found that there was much less error and it would consistently end up in the same spot.
+	<h4>Making the Robot Drive Straight</h4>
+	<p>The green EV3 move blocks (Move Tank and Move Steering) are unreliable. 
+	Although they do have a built in PID feature, they still cannot move the robot in a straight line. To test this, 
+	we set a designated starting spot for the robot and then we ran it until it hit the wall on 
+	the other side of the table. We repeated this dozens of times and found that each time it would end up in a different spot on the other
+	side of the table (up to one inch away form the previous run). Each time it would be up to one inch away from the previous run. Then, we made our own error-corrected 
+	move block (which you can read about in the programming section of this website). We conducted the same experiment
+	using our block and found that there was much less error and it would consistently end up in the same spot.
 	</p>
 <br>
 <br>
