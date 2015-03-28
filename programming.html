@@ -26,7 +26,6 @@
 			<ul class="dropdown-menu">
 				<li><a href="members.html">Members</a></li>
 				<li><a href="mentors.html">Coaches and Mentors</a></li>
-				<li><a href="sponsors.html">Sponsors</a></li>
 			</ul>
         </li>
         <li class="dropdown">
@@ -56,8 +55,7 @@
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
 			<ul class="dropdown-menu">
 				<li><a href = "http://www.firstlegoleague.org/sites/default/files/Challenge/FLL_WORLD_CLASS/FLL-WORLD-CLASS-Challenge-FINAL-v2.pdf" target="_blank">World Class Challenge</a></li>
-				<li><a href = "http://www.firstlegoleague.org/sites/default/files/Challenge/FLL_WORLD_CLASS/FLL-WORLD-CLASS-Challenge-Updates-November-13.pdf" target="_blank">Robot Game Updates</a></li>
-				<li><a href = "fll/WorldClassRobotGameRulesNov21.docx" target="_blank">Latest updates - merged</a></li>
+				<li><a href = "fll/WorldClassRobotGameRulesDec30.pdf" target="_blank">Latest updates - merged</a></li>
  				<li><a href = "http://flltournament.com/Scoresheet.aspx?CID=17" target="_blank">Score Calculator</a></li>
 				<li><a href = "http://home.ican.net/~686280/index.html" target="_blank">Nature's fury website</a></li>
 			</ul>
@@ -92,12 +90,10 @@
 			<li>We regularly use subroutines (i.e. MyBlocks)
 			to reuse code whenever possible and to keep
 			our program sizes manageable. See diagram of our 
-			programming hierarchy which illustrates th eextent to which 
-			we re-use proggrmaing code to be as efficient as possible:</li>
-			<br>	
-				<img class="xl_img" src="images/robot/hierachy.png"></img>
-			<br>
-			<br>
+			programming hierarchy which illustrates the extent to which 
+			we re-use programming code to be as efficient as possible. 
+			See our Program Hierarchy bellow.</li>
+			
 			<li>We annotate our work to help us
 			debug programs and to better understand
 			each programming block's purpose</li>
@@ -144,13 +140,15 @@
 			1000 is black.</li>
 		
 		</ul>
-		
+
 		<br>
-		
+		<h1>Program Hierarchy</h1>
+		<br>
+		<img src="images/robot/hierachy.jpg"></img>
+		<br>
+		<br>
 		<h1>MyBlock Examples</h1>
-		
 		<br>
-		
 		<h3>ScaleLight</h3>
 		 
 		 <p>This ScaleLight MyBlock allows us to read the
@@ -173,7 +171,7 @@
 		<p>Returned light reading by the block = 1000*
 		(current raw light value – min) / (max – min)</p>
 		<br>
-		<img class="xl_img" src="images/robot/scalelight.jpg"></img>
+		<img src="images/robot/scalelight.jpg"></img>
 		<br>
 		<br>
 		<h3>Proportional Integral Derivative Line Following</h3>
@@ -191,7 +189,7 @@
 		based on three user-inputted values in variables in
 		InitMain, Kp, Ki, and Kd.</p>
 		<br>
-		<img class="xl_img" src="images/robot/pid.jpg"></img>
+		<img src="images/robot/pid.jpg"></img>
 		<br>
 		<br>
 		<h3>Main Selection Program</h3>
@@ -210,11 +208,11 @@
 		accommodates that by allowing the user to navigate 
 		with the left and right arrow buttons.</p>
 		<br>
-		<img class="xl_img" src="images/robot/main.jpg"></img>
+		<img src="images/robot/main.jpg"></img>
 		<br>
 		<br>
 		<h3>Error-Corrected Move Block</h3>
-		<br>
+
 		<p>For straighter and more accurate movements, 
 		our program continuously measures the distances 
 		travelled by each drive motor and constantly adjusts their 
@@ -223,7 +221,7 @@
 		more accurate robot arc turns.
 		</p>
 		
-		<img class="xl_img" src="images/robot/zmove.jpg"></img>
+		<img src="images/robot/zmove.jpg"></img>
 		<br>
 		<h3>Check Abort</h3>
 		<br>
@@ -238,7 +236,10 @@
 		rather than fiddle with the EV3 buttons to in selecting
 		the next mission.</p>
 		<br>
-		<img class="xl_img" src="images/robot/checkabort.jpg"></img>
+		<img src="images/robot/checkabort.jpg"></img>
+		<br>
+		<br>
+		<br>
 		<br>
     </div>
 	<script src="jquery/jquery-1.11.1.min.js"></script>
