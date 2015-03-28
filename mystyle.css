@@ -70,6 +70,15 @@ img.portrait {
 	height:85px;
 }
 
+img.vertical_img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:400px;
+	height:682px;
+}
+
 td.tick-border {
 	border: 1px solid black; 
 }
