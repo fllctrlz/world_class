@@ -77,7 +77,7 @@
 			<li>We use math blocks, variables, logic,
 			compare blocks, loops, switches, and MyBlocks with
 			data hubs (so we can reuse code and change 
-			parameters as required)</li>
+			parameters, as required)</li>
 			
 			<li>We have created a selection program
 			which allows us to quickly and efficiently 
@@ -98,7 +98,7 @@
 			our program sizes manageable. See diagram of our 
 			programming hierarchy which illustrates the extent to which 
 			we re-use programming code to be as efficient as possible. 
-			See our Program Hierarchy bellow.</li>
+			</li>
 			
 			<li>We annotate our work to help us
 			debug programs and to better understand
@@ -165,14 +165,14 @@
 		values for white and black collected in calibration)
 		and then output them.
 		The equation we created to scale our light readings uses 
-		variables for the minimum and maximum raw light readings 
-		read in calibration. Inputting the minimum raw light 
+		variables for the minimum and maximum raw light readings collected 
+		in calibration. Inputting the minimum raw light 
 		reading (white) outputs a value of 0, and the maximum raw
 		light reading (black) outputs a value of 1000. With 
 		these two pairs of coordinates, we identified a linear function.
 		When you input the current raw light value the linear function will scale it
 		to some point in the range and output a usable calibrated
-		value form 0 to 1000.</p>
+		value from 0 to 1000.</p>
 		
 		<p>Returned light reading by the block = 1000*
 		(current raw light value – min) / (max – min)</p>
@@ -191,8 +191,8 @@
 		light sensor reading), the integral (the sum of all 
 		errors), and the derivative (the difference between 
 		the current error and last error). Those values are 
-		scaled to an appropriate value for use in motor powers
-		based on three user-inputted values in variables in
+		scaled to an appropriate value for use in motor power levels
+		based on three user-inputted coefficients in
 		InitMain, Kp, Ki, and Kd.</p>
 		<br>
 		<img src="images/robot/pid.jpg"></img>
@@ -203,12 +203,12 @@
 		<p>This selection program allows us to quickly and 
 		efficiently switch programs/missions 
 		during the two-and-a half minute match. 
-		Our selection program contains My-Blocks, each conatins one of our missions.
+		Our selection program contains MyBlocks, each contains one of our missions.
 		The user of the robot simply starts the selection 
-		program and clicks the center button to start the first
+		program and clicks the centre button to start the first
 		mission. Then, when the mission finishes, the robot 
 		automatically advances to the next mission and waits for
-		the user to click the center button to run the apporopriate mission.
+		the user to click the centre button to run the appropriate mission.
 		In case one needs to go backwards or 
 		forwards through the list of missions, the program 
 		accommodates that by allowing the user to navigate 
@@ -223,7 +223,7 @@
 		our program continuously measures the distances 
 		travelled by each drive motor and constantly adjusts their 
 		speeds to maintain the predetermined ratio of the 
-		distance travelled by motors B and C. This My-Block also alows for
+		distance travelled by motors B and C. This MyBlock also allows for
 		more accurate robot arc turns.
 		</p>
 		
@@ -239,7 +239,7 @@
 		Therefore, in the rare circumstance that we must
 		stop our robot, we can do so at any time and still
 		stay within our overall selection program,
-		rather than fiddle with the EV3 buttons to in selecting
+		rather than fiddle with the EV3 buttons in selecting
 		the next mission.</p>
 		<br>
 		<img src="images/robot/checkabort.jpg"></img>
