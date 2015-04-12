@@ -88,6 +88,13 @@ img.attachemnt_img {
 	height:266px;
 }
 
+img.sponsor {
+	width:205px; 
+	height:85px; 
+	padding:4px;
+}
+
+
 td.tick-border {
 	border: 1px solid black; 
 }
